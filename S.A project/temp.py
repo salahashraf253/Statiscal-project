@@ -14,7 +14,7 @@ import numpy as np
 
 file=pd.read_csv(r'Corona_Death.csv')
 
-class Salah(QMainWindow):
+class GUI(QMainWindow):
     
     #dras scatter plot
     def Scatter_Plot(self):
@@ -207,10 +207,8 @@ class Salah(QMainWindow):
 
 #main
 app=QApplication(sys.argv)
-w=Salah()
+w=GUI()
 w.show()
 sys.exit(app.exec_())
 
-x=34
-name='salah'
-name=str(input("Enter your name"))
+
